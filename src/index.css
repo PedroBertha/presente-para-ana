@@ -185,11 +185,20 @@ body,
   .slide-container {
     height: auto;
     min-height: 100vh;
-    padding: 80px 20px;
+    padding: 60px 20px;
+    justify-content: center;
   }
   
   .slide-foreground-image {
-    max-height: 45vh;
+    max-height: 50vh;
+  }
+
+    .horizontal-slide-text {
+    opacity: 1 !important; /* Texto sempre visível */
+    position: relative; /* Remove posicionamento absoluto no mobile */
+    bottom: auto; /* Reseta posicionamentos */
+    left: auto;
+    transform: none;
   }
 
   .horizontal-slide-text h2 {
@@ -197,6 +206,12 @@ body,
   }
   .horizontal-slide-text p {
     font-size: 1rem;
+  }
+
+  .final-slide {
+    height: auto;
+    min-height: 100vh; /* Garante que ocupe a tela toda */
+    align-items: center; /* Centraliza o card da carta verticalmente */
   }
 
   .final-slide-content {
