@@ -172,22 +172,24 @@ body,
 /* --- ESTILOS PARA RESPONSIVIDADE (TELAS MENORES) --- */
 
 @media (max-width: 768px) {
-
-  /* IMPORTANTE: Ativa o scroll vertical apenas em telas pequenas */
-  html, body, #root {
-    overflow-y: auto !important; /* Permite rolar para cima e para baixo */
-    overflow-x: hidden !important; /* Mantém a rolagem lateral desativada */
+  horizontal-slide-text {
+    opacity: 1 !important; /* A mudança mais importante! */
+    bottom: 2%; /* Sobe um pouco o texto para dar mais respiro */
   }
 
-  /* Ajusta o slide de foto para telas de celular */
+    html, body, #root {
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+  }
+
   .slide-container {
-    height: auto; /* A altura se ajusta ao conteúdo */
-    min-height: 100vh; /* Garante que o slide ocupe pelo menos a tela inteira */
-    padding: 80px 20px; /* Mais espaço vertical para o conteúdo respirar */
+    height: auto;
+    min-height: 100vh;
+    padding: 80px 20px;
   }
   
   .slide-foreground-image {
-    max-height: 45vh; /* Diminui um pouco a foto para caber tudo */
+    max-height: 45vh;
   }
 
   .horizontal-slide-text h2 {
@@ -197,16 +199,17 @@ body,
     font-size: 1rem;
   }
 
-  /* Ajusta o slide da carta para telas de celular */
-  .final-slide {
-    height: auto;
-    min-height: 100vh;
+  .final-slide-content {
+    width: 90%;
+    padding: 24px;
+    max-height: 90vh;
   }
-  
+
   .final-slide-content h4 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
+
   .final-slide-content p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
